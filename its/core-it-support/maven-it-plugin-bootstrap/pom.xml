@@ -31,7 +31,7 @@ under the License.
   <name>Bootstrap plugin</name>
 
   <properties>
-    <mavenResolverVersion>1.8.1</mavenResolverVersion>
+    <mavenResolverVersion>1.9.22</mavenResolverVersion>
   </properties>
 
   <dependencies>
