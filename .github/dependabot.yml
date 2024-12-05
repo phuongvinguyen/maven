@@ -20,12 +20,12 @@ updates:
   - package-ecosystem: "maven"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
 
   - package-ecosystem: maven
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
     target-branch: "maven-3.9.x"
     labels:
       - "mvn3"
@@ -33,5 +33,5 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
 
