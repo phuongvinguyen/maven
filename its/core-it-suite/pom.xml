@@ -74,10 +74,10 @@ under the License.
     <proxy.host>localhost</proxy.host>
     <proxy.port>80</proxy.port>
     <proxy.type>none</proxy.type>
-    <proxy.user />
-    <proxy.pass />
+    <proxy.user/>
+    <proxy.pass/>
     <proxy.nonProxyHosts>localhost</proxy.nonProxyHosts>
-    <jetty9Version>9.4.55.v20240627</jetty9Version>
+    <jetty9Version>9.4.56.v20240826</jetty9Version>
 
     <stubPluginVersion>0.1-stub-SNAPSHOT</stubPluginVersion>
   </properties>
@@ -766,11 +766,11 @@ under the License.
                 <phase>process-test-resources</phase>
                 <configuration>
                   <target>
-                    <delete dir="${mavenHome}" />
+                    <delete dir="${mavenHome}"/>
                     <unzip dest="${mavenHome}" src="${project.build.directory}/maven-bin.zip">
-                      <globmapper from="apache-maven-${mavenVersion}/*" handledirsep="true" to="*" />
+                      <globmapper from="apache-maven-${mavenVersion}/*" handledirsep="true" to="*"/>
                     </unzip>
-                    <chmod dir="${mavenHome}/bin" includes="mvn,mvnDebug" perm="ugo+rx" />
+                    <chmod dir="${mavenHome}/bin" includes="mvn,mvnDebug" perm="ugo+rx"/>
                   </target>
                 </configuration>
               </execution>
@@ -809,11 +809,11 @@ under the License.
                 <phase>process-test-resources</phase>
                 <configuration>
                   <target>
-                    <delete dir="${mavenHome}" />
+                    <delete dir="${mavenHome}"/>
                     <unzip dest="${mavenHome}" src="${mavenDistro}">
-                      <regexpmapper from="^([^/]+)/(.*)$" handledirsep="true" to="\2" />
+                      <regexpmapper from="^([^/]+)/(.*)$" handledirsep="true" to="\2"/>
                     </unzip>
-                    <chmod dir="${mavenHome}/bin" includes="mvn,mvnDebug" perm="ugo+rx" />
+                    <chmod dir="${mavenHome}/bin" includes="mvn,mvnDebug" perm="ugo+rx"/>
                   </target>
                 </configuration>
               </execution>
@@ -848,11 +848,11 @@ under the License.
                 <phase>process-test-classes</phase>
                 <configuration>
                   <target>
-                    <delete dir="${preparedMavenHome}" />
+                    <delete dir="${preparedMavenHome}"/>
                     <copy overwrite="true" todir="${preparedMavenHome}">
-                      <fileset dir="${mavenHome}" />
+                      <fileset dir="${mavenHome}"/>
                     </copy>
-                    <chmod dir="${preparedMavenHome}/bin" includes="mvn,mvnDebug" perm="ugo+rx" />
+                    <chmod dir="${preparedMavenHome}/bin" includes="mvn,mvnDebug" perm="ugo+rx"/>
                   </target>
                 </configuration>
               </execution>
