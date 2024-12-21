@@ -577,7 +577,7 @@ under the License.
         <dependency>
           <groupId>org.apache.maven</groupId>
           <artifactId>apache-maven</artifactId>
-          <version>4.0.0-beta-6-SNAPSHOT</version>
+          <version>4.0.0-rc-3-SNAPSHOT</version>
           <classifier>bin</classifier>
           <type>zip</type>
         </dependency>
